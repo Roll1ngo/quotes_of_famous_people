@@ -27,15 +27,15 @@
                        href="{% if quotes.has_previous%} {% url 'quotes:root_paginate' quotes.previous_page_number %} {% else %} # {% endif %}">Previous</a>
                 </li>
                 {% if quotes.has_previous %}
-                <li class="{% if not quotes.has_previous %} page-item disabled {% else %} page-item {% endif %}"><a
+                <li class="page-item"><a
                         class="page-link"
-                        href="{% if quotes.has_previous%} {% url 'quotes:root_paginate' quotes.previous_page_number %} {% else %}  {% endif %}">{% if quotes.has_previous %} {{quotes.previous_page_number}} {% else %} 1 {% endif %}</a></li>
+                        href="{% url 'quotes:root_paginate' quotes.previous_page_number %}">{{quotes.previous_page_number}}</a></li>
                 {% endif %}
-                <li class="page-item active"><a class="page-link" href="#">{{quotes.number}}</a></li>
+                <li class="page-item active"><a class="page-link" href="{% url 'quotes:root_paginate' quotes.number %}">{{quotes.number}}</a></li>
                 {% if quotes.has_next %}
-                <li class="{% if not quotes.has_next%} page-item disabled {% else %} page-item {% endif %}"><a class="page-link" href="{% if quotes.has_next%} {% url 'quotes:root_paginate' quotes.next_page_number %} {% else %} # {% endif %}">{{quotes.next_page_number}}</a></li>
+                <li class="page-item "><a class="page-link" href="{% if quotes.has_next%} {% url 'quotes:root_paginate' quotes.next_page_number %} {% else %} # {% endif %}">{{quotes.next_page_number}}</a></li>
                 {% endif %}
-                <li class="{% if not quotes.has_next %} page-item disabled {% endif %}">
+                <li class="{% if not quotes.has_next %} page-item disabled {% else %} page-item {% endif %}">
                     <a class="page-link"
                        href="{% if quotes.has_next%} {% url 'quotes:root_paginate' quotes.next_page_number %} {% else %} # {% endif %}">Next</a>
                 </li>
