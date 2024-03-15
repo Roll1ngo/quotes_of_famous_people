@@ -35,6 +35,16 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-bootstrap"
+version = "0.2.4"
+description = "Django class-based views working with Bootstrap, from Twitter."
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-bootstrap-0.2.4.tar.gz", hash = "sha256:9d48756d600ea1d816150e5c5fc17149afec68e8190eaed56d0858d9a092caff"},
+]
+
+[[package]]
 name = "dnspython"
 version = "2.6.1"
 description = "DNS toolkit"
@@ -308,4 +318,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "c1837d68e9ecffaa79fabd0bc2ff51593fd14b49f91c3270d77876373cb43ae6"
+content-hash = "a265e8fe865fbf40c36e828ae040ea5acaff35b9869d15b51fb15e7716f0754a"

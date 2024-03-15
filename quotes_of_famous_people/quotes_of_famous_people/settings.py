@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "quotes.apps.QuotesConfig",
     "users.apps.UsersConfig",
+    "bootstrap5"
 ]
 
 MIDDLEWARE = [

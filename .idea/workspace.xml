@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9923fd91-d6f9-4f09-9107-9c5ae84e370e" name="Changes" comment="Last redaction paginates" />
+    <list default="true" id="9923fd91-d6f9-4f09-9107-9c5ae84e370e" name="Changes" comment="Add comments in paginate">
+      <change afterPath="$PROJECT_DIR$/quotes_of_famous_people/quotes/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quotes_of_famous_people/quotes/static/quotes/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quotes_of_famous_people/quotes/templates/quotes/add_author.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quotes_of_famous_people/quotes/templates/quotes/add_quote.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes_of_famous_people/quotes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes_of_famous_people/quotes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes_of_famous_people/quotes/static/images/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes_of_famous_people/quotes/static/quotes/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/quotes_of_famous_people/quotes/static/quotes/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes_of_famous_people/quotes/templates/quotes/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/quotes_of_famous_people/quotes/templates/quotes/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes_of_famous_people/quotes/templates/quotes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/quotes_of_famous_people/quotes/templates/quotes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes_of_famous_people/quotes/templates/quotes/pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes_of_famous_people/quotes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes_of_famous_people/quotes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes_of_famous_people/quotes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes_of_famous_people/quotes/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes_of_famous_people/quotes_of_famous_people/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes_of_famous_people/quotes_of_famous_people/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -41,15 +58,21 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/RollPy/Documents/GitHub/NewThread/quotes_of_famous_people/quotes_of_famous_people/quotes/migrations&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/RollPy/Documents/GitHub/NewThread/quotes_of_famous_people/quotes_of_famous_people/quotes/static/quotes/images&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\RollPy\Documents\GitHub\NewThread\quotes_of_famous_people\quotes_of_famous_people\quotes\static\quotes\images" />
+      <recent name="C:\Users\RollPy\Documents\GitHub\NewThread\quotes_of_famous_people\quotes_of_famous_people\quotes\static" />
+      <recent name="C:\Users\RollPy\Documents\GitHub\NewThread\quotes_of_famous_people\quotes_of_famous_people\quotes\static\quotes" />
       <recent name="C:\Users\RollPy\Documents\GitHub\NewThread\quotes_of_famous_people\quotes_of_famous_people\quotes\migrations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\RollPy\Documents\GitHub\NewThread\quotes_of_famous_people\quotes_of_famous_people\quotes\static\quotes\images" />
       <recent name="C:\Users\RollPy\Documents\GitHub\NewThread\quotes_of_famous_people\quotes_of_famous_people\quotes\static\quotes" />
+      <recent name="C:\Users\RollPy\Documents\GitHub\NewThread\quotes_of_famous_people\quotes_of_famous_people\images\static\images" />
+      <recent name="C:\Users\RollPy\Documents\GitHub\NewThread\quotes_of_famous_people\quotes_of_famous_people" />
     </key>
   </component>
   <component name="RunManager">
@@ -113,7 +136,31 @@
       <option name="project" value="LOCAL" />
       <updated>1710484786667</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Last redaction paginates">
+      <option name="closed" value="true" />
+      <created>1710484944231</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710484944231</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Last redaction paginates">
+      <option name="closed" value="true" />
+      <created>1710484968999</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710484968999</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add comments in paginate">
+      <option name="closed" value="true" />
+      <created>1710485461247</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710485461247</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +179,7 @@
     <MESSAGE value="Working next and previous" />
     <MESSAGE value="Working all pagination" />
     <MESSAGE value="Last redaction paginates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Last redaction paginates" />
+    <MESSAGE value="Add comments in paginate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comments in paginate" />
   </component>
 </project>

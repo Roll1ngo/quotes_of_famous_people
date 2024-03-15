@@ -24,10 +24,14 @@
     color: white;
     font-size: small;
     background-color: #7CA3E6;
-
-body {
-    background-image: url('../images/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
+ #bg {
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: top;
+ background-attachment: fixed;
+  }
+.authorheader {
+        color: #006400;
+}
+
