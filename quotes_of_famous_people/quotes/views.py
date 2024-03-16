@@ -1,5 +1,5 @@
 import re
-
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from .models import AuthorDjango, QuoteDjango
 from django.core.paginator import Paginator
@@ -16,6 +16,7 @@ def main(request, page=1):
     return render(request, 'quotes/index.html', context={'quotes': quotes_on_page})
 
 
+@login_required
 def add_quote(request):
     if request.method == 'POST':
         form = AddQuote(request.POST)
@@ -31,6 +32,7 @@ def add_quote(request):
     return render(request, 'quotes/add_quote.html', {'form': form})
 
 
+@login_required
 def add_author(request):
     if request.method == 'POST':
         form_author = AddAuthor(request.POST)
@@ -40,3 +42,8 @@ def add_author(request):
     else:
         form_author = AddAuthor()
     return render(request, 'quotes/add_author.html', {'form_author': form_author})
+
+
+def show_author(request, name):
+    author = AuthorDjango.objects.get(fullname=name)
+    return render(request, 'quotes/show_author.html', {'author': author})
