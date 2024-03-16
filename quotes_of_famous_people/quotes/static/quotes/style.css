@@ -25,6 +25,12 @@
     font-size: small;
     background-color: #7CA3E6;
 }
+.tag-top10 {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: green;
+    font-size: 26px;
+}
  #bg {
  background-repeat: no-repeat;
  background-size: cover;

@@ -14,8 +14,8 @@
     <title>Main Page</title>
 
 </head>
-<body>
-<nav class="navbar bg-body-tertiary justify-content-between">
+<body id="bg" style="background-image: url('{% static "quotes/images/background.png" %}');">
+<nav class="navbar bg-body-tertiary justify-content-between" style="opacity: 0.7;">
     {% if user.is_authenticated %}
     <div>
         <a href="{% url 'quotes:add_quote' %}" class="btn btn-warning" type="button">Add quote</a>
