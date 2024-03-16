@@ -21,9 +21,9 @@
         <a href="{% url 'quotes:root' %}" class="btn btn-info" type="button">Main</a>
     </div>
     <div>
-        <button class="btn btn-success" type="button">Login</button>
-        <button class="btn btn-light" type="button">Logout</button>
-        <button class="btn btn-outline-secondary" type="button">Registration</button>
+        <a href="{% url 'users:login' %}" class="btn btn-success" type="button">Login</a>
+        <a href="{% url 'users:logout' %}" class="btn btn-light" type="button">Logout</a>
+        <a href="{% url 'users:registration' %}" class="btn btn-outline-secondary" type="button">Registration</a>
     </div>
 </nav>
 <div class="container">

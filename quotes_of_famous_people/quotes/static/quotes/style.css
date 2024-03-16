@@ -31,7 +31,9 @@
  background-position: top;
  background-attachment: fixed;
   }
-.authorheader {
-        color: #006400;
+
+.registration-link {
+    color: red;
+    text-decoration: none;
 }
 
