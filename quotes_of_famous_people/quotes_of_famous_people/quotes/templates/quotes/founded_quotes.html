@@ -1,0 +1,28 @@
+{% extends 'quotes/base.html' %}
+{% block content %}
+ <div class="col-md-8">
+        <h1>
+            <a href="/" style="text-decoration: none"><u>{{tag}}</u></a>
+        </h1>
+    </div>
+{% for quote in founded_quotes %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="quote" itemscope="" itemtype="http://schema.org/CreativeWork">
+            <span class="text" itemprop="text">
+                {{quote}}
+            </span>
+            <span>by <small class="author" itemprop="author">{{quote.author.fullname}}</small>
+        <a href="{% url 'quotes:show_author' quote.author %}">(about)</a>
+            </span>
+            <div class="tags">
+                Tags:
+                {% for tag in quote.tags %}
+                <a class="tag" href="{% url 'quotes:find_quotes_by_tag' tag %}">{{tag}}</a>
+                {%endfor%}
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

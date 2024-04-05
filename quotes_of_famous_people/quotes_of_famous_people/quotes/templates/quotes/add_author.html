@@ -1,0 +1,48 @@
+{% extends "quotes/base.html" %}
+{% block content %}
+
+<div class="container mt-5" style="opacity: 0.8;">
+    <div class="card">
+        <div class="card-header">
+            <h1 class="fst-italic">Add Author</h1>
+        </div>
+        <div class="card-body">
+            <form method="POST" action="{% url 'quotes:add_author' %}">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label class="fst-italic">Enter the fullname:</label>
+                    {{ form_author.fullname }}
+                    <div class="invalid-feedback">
+                        {{ form_author.errors.fullname }}
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="fst-italic">Enter the born date:</label>
+                    {{ form_author.born_date }}
+                    <div class="invalid-feedback">
+                        {{ form_author.errors.born_date }}
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label  class="fst-italic">Enter the born location:</label>
+                    {{ form_author.born_location }}
+                    <div class="invalid-feedback">
+                        {{ form_author.errors.born_location }}
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label  class="fst-italic">Enter the description:</label>
+                    {{ form_author.description }}
+                    <div class="invalid-feedback">
+                        {{ form_author.errors.description }}
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

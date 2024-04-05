@@ -1,0 +1,58 @@
+{% extends 'quotes/base.html' %}
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row header-box pt-3 mb-3">
+        <div class="col-md-8">
+            <h1>
+                <span >Registration</span>
+            </h1>
+        </div>
+    </div>
+
+    {% if messages %}
+    <div class="mb-3">
+        {% for message in messages %}
+        <div class="alert {% if message.tags %} alert-{{ message.tags }}{% endif %}">{{ message }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <form method="post" action="{% url 'users:registration' %}">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label  class="form-label">Username:</label>
+            {{ reg_form.username }}
+            <div class="invalid-feedback">
+                {{ reg_form.errors.username }}
+            </div>
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Email:</label>
+            {{ reg_form.email }}
+            <div class="invalid-feedback">
+                {{ reg_form.errors.email }}
+            </div>
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Password:</label>
+            {{ reg_form.password1 }}
+            <div class="invalid-feedback">
+                {{ reg_form.errors.password1 }}
+            </div>
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Password confirmation:</label>
+            {{ reg_form.password2 }}
+            <div class="invalid-feedback">
+                {{ reg_form.errors.password2 }}
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
